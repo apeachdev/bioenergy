@@ -1,0 +1,41 @@
+/* 05.16. Icons Shortcode */
+.icon-container {
+	display: inline-block;
+	margin-right: 3px;
+	margin-bottom: 5px;
+
+	&--square,
+	&--circle {
+		width: 40px;
+		height: 40px;
+		font-size: 22px;
+		background-color: #7e92a3;
+		text-align: center;
+		line-height: 42px;
+		color: #ffffff;
+		transition: $primary-transition;
+
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+
+	&--square {
+		border-radius: 2px;
+	}
+
+	&--circle {
+		border-radius: 50%;
+	}
+
+	.footer & {
+		&--square,
+		&--circle {
+			color: $primary-color;
+
+			&:hover {
+				background-color: #ffffff;
+			}
+		}
+	}
+}
